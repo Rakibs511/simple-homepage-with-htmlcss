@@ -7,9 +7,11 @@ currentValue.innerText=test;
 total.innerText=test
 
 const addBalanceHande=()=>{
-    test=test+parseInt(newvalue.value);
-    total.innerText=test
-    newvalue.value=""
+    if(newvalue!==NaN){
+        test=test+parseInt(newvalue.value);
+        total.innerText=test
+        newvalue.value=""
+    }
 }
 
 
