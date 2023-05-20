@@ -10,10 +10,8 @@
 /* NavBar section */
 .navbar{
     display: flex;
-    width: 100%;
     background-color: green;
     justify-content: center;
-    align-items: center;
 
 }
 
@@ -24,16 +22,17 @@
 .navbar ul{
     display: flex;
     align-items: center;
-    font-size: xx-large;
+    font-size: medium;
     list-style: none;
-    width: 50%;
+    width: 800px;
     justify-content: center;
 }
 
 .navbar ul li{
     color: white;
     padding: 20px;
-    transition: 0.3s;
+    transition: 0.5s;
+    margin-left:40px;
     cursor: pointer;
     user-select: none;
 }
@@ -44,6 +43,7 @@
 }
 
 .dropdown-container{
+    margin-left:40px;
     color: white;
     position: relative;
     cursor: pointer;
@@ -52,13 +52,14 @@
     display: none;
     position: absolute;
     background-color: green;
-    top: 45px;
-    left: 5px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    top: 25px;
+    left:-10px;
+    padding-right:30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .dropdown-list li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .dropdown-container:hover .dropdown-list{
@@ -68,13 +69,13 @@
 
 .phone-icon{
     margin-right:10px;
-    width: 35px;
+    width: 25px;
 }
 
 
 /* Main section */
 .main,.bottom{
-    padding-left: 400px;
+    padding-left: 220px;
     padding-right: 400px;
 }
 
@@ -82,11 +83,14 @@
     display: flex;
 }
 .diposit-container{
+    
     margin: 20px;
     height: 400px;
     width: 70%;
     min-width: 700px;
 }
+
+
 .diposit-container h1{
     margin: 10px;
     color: green;
@@ -99,9 +103,17 @@
     padding-top: 150px;
     text-align: center;
     background-color: white;
-    box-shadow:  1px 1px 3px gray ;
+    box-shadow:  1px 1px 1px gray ;
     width: 33%;
+    transition: .4s;
 }
+
+.value:hover{
+    margin:10px;
+    border-radius:20px;
+    box-shadow:  1px 1px 3px gray ;
+}
+
 .value input{
     padding:10px;
     width: 90%;
@@ -124,6 +136,13 @@
     border-radius: 30px;
     box-shadow: 1px 1px 10px rgb(7, 98, 7);
     background-color: rgb(9, 209, 9);
+}
+
+/* input value */
+#new-value{
+    border-radius:20px;
+    background-color:#d1ffe5;
+    border:none;
 }
 
 
@@ -152,9 +171,9 @@
 }
 
 .image-container{
-    width: 50%;
     position: relative;
 }
+
 .image-container img{
     width: 300px;
 }
@@ -162,6 +181,7 @@
 .image-1{
     border-radius: 20px;
     box-shadow: 1px 1px 5px gray;
+    transition:1s;
 }
 .image-2{
     position: absolute;
@@ -169,6 +189,16 @@
     top: 80px;
     border-radius: 20px;
     box-shadow: 1px 1px 5px gray;
+    transition:1s;
+}
+
+.image-container:hover .image-1{
+    width:305px
+}
+
+.image-container:hover .image-2{
+    top:90px;
+    left:130px;
 }
 
 
@@ -176,8 +206,9 @@
 .todo-container{
     overflow-x:auto;
     display: flex;
-    width: 100%;
+    min-width: 600px;
     margin-left: 150px;
+    margin-bottom: 50px;
     height:330px;
     box-shadow: 1px 1px 3px rgb(159, 158, 158);
 }
@@ -186,7 +217,6 @@
 .todo-system{
     text-align: justify;
     padding: 20px;
-    width: 400px;
 }
 
 .info{
